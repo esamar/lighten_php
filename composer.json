@@ -1,0 +1,24 @@
+{
+    "name" : "evsc/lighten_php",
+    "description": "FrameWork ligero y rapido, incluye conexión a BD, sistema de rutas , PSR-4 y exportador de archivos xlsm con spout",
+    "authors":[
+        {
+            "name":"Edinson Samar",
+            "email": "ev.samar.c@gmail.com"
+        }
+    ],
+    "require": {
+        "box/spout": "^2"
+    },
+    "autoload": {
+        "files": [
+            "config/app.php",
+            "routes/app.php"
+        ],
+        "psr-4":{
+            "App\\":"app/",
+            "Libs\\":"libs/"
+
+        }
+    }
+}
