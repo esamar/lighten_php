@@ -1,5 +1,7 @@
 <?php
 
+$global_routes = [];
+
 class Router {
 	
 	protected static $parts_uri;
@@ -11,6 +13,8 @@ class Router {
 	protected static $request_query;
 
 	protected static $dir_controller;
+
+	protected static $routes;
 
 	public function __construct()
 	{
@@ -267,7 +271,7 @@ class Router {
 
 		$file_class =  $class . '.php';
 		
-		require ( ( static::$dir_controller ? static::$dir_controller . '/' : '/Services/' ) . $file_class );
+		require ( ( static::$dir_controller ? static::$dir_controller . '/' : 'app/Controller/' ) . $file_class );
 
 		$controller_class = new $class; 
 
@@ -332,6 +336,20 @@ class Returns {
 		http_response_code($response_code);
 
 		require $require;
+
+	}
+
+}
+
+class Routes{
+
+	public function addRoute( $uri )
+	{
+		global $global_routes;
+
+		array_push( $global_routes , [ "Hola" =>$uri ]);
+
+		return $global_routes;
 
 	}
 

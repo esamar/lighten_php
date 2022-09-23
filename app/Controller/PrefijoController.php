@@ -1,14 +1,14 @@
 <?php
 
-use App\dataObject\Prefijobd as PrefijoModel;
+use App\Model\Prefijo;
 
-class Prefijo extends PrefijoModel
+class PrefijoController extends Prefijo
 {
 
     public function obtenerPrefijos() : array
     {
 
-        $datos = PrefijoModel::getConfigPrefijos();
+        $datos = Prefijo::getConfigPrefijos();
 
 		return [ 
 	 			

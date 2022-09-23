@@ -1,10 +1,10 @@
 <?php
 
-namespace App\dataObject;
+namespace App\Model;
 
 use Libs\Transac\Mysql as TransacSQL;
 
-class Prefijobd extends TransacSQL
+class Prefijo extends TransacSQL
 {
         
     public function getConfigPrefijos()

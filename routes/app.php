@@ -2,8 +2,6 @@
 
 	require ('libs/EasyRouter.php');
 
-	Router::dirController('app/services');
-
 	Router::get('/obtener-prefijos', 'Prefijo@obtenerPrefijos:data', function( $data, $resp )
 	{
 
@@ -11,19 +9,26 @@
 
 	});
 
-	Router::post('/inventario-cuadernillo', 'Instrument@obtenerInventarioCuadernillo:data', function( $data, $resp )
-	{
+	// Router::get('/obtener-prefijos', 'Prefijo@obtenerPrefijos:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});
+	// });
 
-	Router::post('/registrar-inventario-mod1', 'Inventory@registrarInventarioInstrumento:data', function( $data, $resp )
-	{
+	// Router::post('/inventario-cuadernillo', 'Instrument@obtenerInventarioCuadernillo:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});	
+	// });
+
+	// Router::post('/registrar-inventario-mod1', 'Inventory@registrarInventarioInstrumento:data', function( $data, $resp )
+	// {
+
+	// 		Returns::JSON( 200 , $resp );
+
+	// });	
 
 
 	// Router::get('/export-inventario-cuadernillo', 'Instrument@exportarInventarioCuader:data', function( $data, $resp )
@@ -34,58 +39,59 @@
 	// });	
 
 
-	Router::post('/inventario-paquete', 'Instrument@obtenerInventarioPaquete:data', function( $data, $resp )
-	{
+	// Router::post('/inventario-paquete', 'Instrument@obtenerInventarioPaquete:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});
+	// });
 
-	Router::post('/registrar-inventario-mod2', 'Inventory@registrarInventarioInstrumentoMod2:data', function( $data, $resp )
-	{
+	// Router::post('/registrar-inventario-mod2', 'Inventory@registrarInventarioInstrumentoMod2:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});	
-
-
-	Router::post('/registrar-inventario-mod3', 'Inventory@registrarInventarioPaqueteMod3:data', function( $data, $resp )
-	{
-
-			Returns::JSON( 200 , $resp );
-
-	});	
+	// });	
 
 
-	Router::post('/inventario-cajas', 'Instrument@obtenerInventarioCajas:data', function( $data, $resp )
-	{
+	// Router::post('/registrar-inventario-mod3', 'Inventory@registrarInventarioPaqueteMod3:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});
+	// });	
+
+
+	// Router::post('/inventario-cajas', 'Instrument@obtenerInventarioCajas:data', function( $data, $resp )
+	// {
+
+	// 		Returns::JSON( 200 , $resp );
+
+	// });
 	
 	
-	Router::post('/inventario-cajas-pallet', 'Instrument@obtenerInventarioCajasPallet:data', function( $data, $resp )
-	{
+	// Router::post('/inventario-cajas-pallet', 'Instrument@obtenerInventarioCajasPallet:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});	
+	// });	
 
-	Router::post('/registrar-inventario-mod4', 'Inventory@registrarInventarioPalletMod4:data', function( $data, $resp )
-	{
+	// Router::post('/registrar-inventario-mod4', 'Inventory@registrarInventarioPalletMod4:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});
+	// });
 
 
-	Router::post('/registrar-inventario-mod5', 'Inventory@registrarInventarioPalletMod5:data', function( $data, $resp )
-	{
+	// Router::post('/registrar-inventario-mod5', 'Inventory@registrarInventarioPalletMod5:data', function( $data, $resp )
+	// {
 
-			Returns::JSON( 200 , $resp );
+	// 		Returns::JSON( 200 , $resp );
 
-	});
+	// });
+
 
 	// Router::get('/export-inventario-paquete', 'Instrument@exportarInventarioPaquete:data', function( $data, $resp )
 	// {
